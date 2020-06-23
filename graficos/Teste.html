@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gráfico Linha</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!-- CDN do Chart.js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="../chartjs-plugin-annotation-master/chartjs-plugin-annotation.min.js"></script>
+    
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/exporting/amexport_combined.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/themes/none.js"></script>
+</head>
+<body>
+
+<div class="container" style="background-color: #F3F3F3">
+<div id="chartdiv" style="width : 100%; height : 500px;"></div>
+</div>
+
+<script>
+	
+var chart;
+
+var chartData = [{
+   "country": "USA",
+       "visits": 4025,
+       "color": "#FF0F00"
+}, {
+   "country": "China",
+       "visits": 1882,
+       "color": "#FF6600"
+}, {
+   "country": "Japan",
+       "visits": 1809,
+       "color": "#FF9E01"
+}, {
+   "country": "Germany",
+       "visits": 1322,
+       "color": "#FCD202"
+}, {
+   "country": "UK",
+       "visits": 1122,
+       "color": "#F8FF01"
+}, {
+   "country": "France",
+       "visits": 1114,
+       "color": "#B0DE09"
+}, {
+   "country": "India",
+       "visits": 984,
+       "color": "#04D215"
+}, {
+   "country": "Spain",
+       "visits": 711,
+       "color": "#0D8ECF"
+}, {
+   "country": "Netherlands",
+       "visits": 665,
+       "color": "#0D52D1"
+}, {
+   "country": "Russia",
+       "visits": 580,
+       "color": "#2A0CD0"
+}, {
+   "country": "South Korea",
+       "visits": 443,
+       "color": "#8A0CCF"
+}, {
+   "country": "Canada",
+       "visits": 441,
+       "color": "#CD0D74"
+}, {
+   "country": "Brazil",
+       "visits": 395,
+       "color": "#754DEB"
+}, {
+   "country": "Italy",
+       "visits": 386,
+       "color": "#DDDDDD"
+}, {
+   "country": "Australia",
+       "visits": 384,
+       "color": "#999999"
+}, {
+   "country": "Taiwan",
+       "visits": 338,
+       "color": "#333333"
+}, {
+   "country": "Poland",
+       "visits": 328,
+       "color": "#000000"
+}];
+
+
+var chart = AmCharts.makeChart("chartdiv", {
+   "theme": "none",
+   type: "serial",
+   dataProvider: chartData,
+   categoryField: "country",
+   depth3D: 20,
+   angle: 30,
+
+   categoryAxis: {
+       labelRotation: 90,
+       gridPosition: "start"
+   },
+
+   valueAxes: [{
+       title: "Visitors"
+   }],
+
+   graphs: [{
+
+       valueField: "visits",
+       colorField: "color",
+       type: "column",
+       lineAlpha: 0.1,
+       fillAlphas: 1
+   }],
+
+   chartCursor: {
+       cursorAlpha: 0,
+       zoomable: false,
+       categoryBalloonEnabled: false
+   },
+   pathToImages: "http://www.amcharts.com/lib/3/images/",
+   exportConfig: {
+       menuTop   : '21px',
+       menuRight : '20px',
+       menuItems: [{
+           icon: 'http://www.amcharts.com/lib/3/images/export.png',
+           items: [{
+               title: 'PNG',
+               onclick: function (instance) {
+                   scaleUp(instance, 'image/png', 'amChart.png', 4);
+               }
+           }, {
+               title: 'JPG',
+               onclick: function (instance) {
+                   scaleUp(instance, 'image/jpeg', 'amChart.jpg', 4);
+               }
+           }, {
+               title: 'SVG',
+               onclick: function (instance) {
+                   scaleUp(instance, 'image/svg+xml', 'amChart.svg', 4);
+               }
+           }]
+       }]
+   }
+});
+
+
+/*
+** SCALES THE GROUPED SVG AND CONVERTS IT TO GIVEN FORMAT
+*/
+function scaleUp(instance, format, fileName, scaleFactor) {
+   // Internal method to crawl the SVGs within the chart
+   instance.generateOutput({
+       format: 'svg' // avoids internal image processing
+   }, function () {
+       var data, blob,
+       canvas = document.createElement('canvas'),
+           context = canvas.getContext('2d'),
+           SVG = instance.generateSVG(),
+           DOMP = new DOMParser().parseFromString(SVG, 'image/svg+xml'),
+           wrapper = DOMP.getElementsByTagName('g')[0],
+           transform = wrapper.getAttribute('transform');
+
+       // SCALE; ADAPT CANVAS
+       wrapper.setAttribute('transform', transform + ' scale(' + scaleFactor + ')');
+       canvas.width = instance.chart.divRealWidth * scaleFactor;
+       canvas.height = instance.chart.divRealHeight * scaleFactor;
+
+       // JPEG EXCEPTION
+       if (format == 'image/jpeg') {
+           context.fillStyle = '#FFFFFF';
+           context.fillRect(0, 0, canvas.width, canvas.height);
+       }
+
+       // SVG EXCEPTION
+       if (format == 'image/svg+xml') {
+           data = new XMLSerializer().serializeToString(DOMP);
+
+           // JPG/PNG
+       } else {
+           canvg(canvas, DOMP, {
+               ignoreMouse: true,
+               ignoreAnimation: true,
+               ignoreDimensions: true,
+               ignoreClear: true
+           });
+           data = canvas.toDataURL(format);
+       }
+
+       // GENERAT BLOB DATA; CREATE DOWNLOAD
+       blob = instance.generateBlob(data, format);
+       saveAs(blob, fileName);
+   });
+}
+
+</script>
+	
+</body>
+</html>
