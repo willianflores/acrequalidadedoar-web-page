@@ -134,133 +134,128 @@ Coded by www.creative-tim.com
         </div>
         <div class="row">
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_rbr.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPm(GetZero(calculate($aq)))[0]; ?>;">
+            <div id="background-color-rbr" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFont(GetZero(calculate($aq)))[0]; ?>;">Rio Branco</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFont(GetZero(calculate($aq)))[0]; ?>;"><?php echo round(GetZero(calculate($aq))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-rbr" class="card-category text-left">Rio Branco</p>
+                      <p id="aq-rbr" class="card-title mx-auto aq-color-rbr "> </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card-footer ">
+              <div  class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFont(GetZero(calculate($aq)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFont(GetZero(calculate($aq)))[0]; ?>;"></i>
-                  <?php echo $sensorstamp; ?>
+                <div id="color-footer-rbr"  class="stats aq-class-rbr">
+                  <i id="color-i-rbr" class="fa fa-cloud"></i>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_czs.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPmCzs(GetZeroCzs(calculateCzs($aqczs)))[0]; ?>;">
+            <div id="background-color-czs" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFontCzs(GetZeroCzs(calculateCzs($aqczs)))[0]; ?>;">Cruzeiro do Sul</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFontCzs(GetZeroCzs(calculateCzs($aqczs)))[0]; ?>;"><?php echo round(GetZeroCzs(calculateCzs($aqczs))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-czs" class="card-category text-left" >Cruzeiro do Sul</p>
+                      <p id="aq-czs" class="card-title mx-auto aq-color-czs"></p>
+                      
                     </div>
                   </div>
                 </div>
               </div>
               <div class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFontCzs(GetZeroCzs(calculateCzs($aqczs)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFontCzs(GetZeroCzs(calculateCzs($aqczs)))[0]; ?>;"></i>
-                  <?php echo $sensorstampczs; ?>
+                <div id="color-footer-czs" class="stats aq-class-czs" >
+                  <i id="color-i-czs" class="fa fa-cloud" ></i>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_brl.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPmBrl(GetZeroBrl(calculateBrl($aqbrl)))[0]; ?>;">
+            <div id="background-color-brl" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFontBrl(GetZeroBrl(calculateBrl($aqbrl)))[0]; ?>;">Brasiléia</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFontBrl(GetZeroBrl(calculateBrl($aqbrl)))[0]; ?>;"><?php echo round(GetZeroBrl(calculateBrl($aqbrl))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-brl" class="card-category text-left">Brasiléia</p>
+                      <p id="aq-brl" class="card-title mx-auto aq-color-brl"></p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFontBrl(GetZeroBrl(calculateBrl($aqbrl)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFontBrl(GetZeroBrl(calculateBrl($aqbrl)))[0]; ?>;"></i>
-                  <?php echo $sensorstampbrl; ?>
+                <div id="color-footer-brl" class="stats aq-class-brl">
+                  <i id="color-i-brl" class="fa fa-cloud"></i>
+
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_abr.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPmAbr(GetZeroAbr(calculateAbr($aqabr)))[0]; ?>;">
+            <div id="background-color-rbr" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFontAbr(GetZeroAbr(calculateAbr($aqabr)))[0]; ?>;">Assis Brasil</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFontAbr(GetZeroAbr(calculateAbr($aqabr)))[0]; ?>;"><?php echo round(GetZeroAbr(calculateAbr($aqabr))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-abr" class="card-category text-left">Assis Brasil</p>
+                      <p id="aq-abr" class="card-title mx-auto aq-color-abr"></p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFontAbr(GetZeroAbr(calculateAbr($aqabr)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFontAbr(GetZeroAbr(calculateAbr($aqabr)))[0]; ?>;"></i>
-                  <?php echo $sensorstampabr; ?>
+                <div id="color-footer-abr" class="stats aq-class-abr">
+                  <i id="color-i-abr" class="fa fa-cloud" ></i>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_snm.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPmSnm(GetZeroSnm(calculateSnm($aqsnm)))[0]; ?>;">
+            <div id="background-color-snm" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFontSnm(GetZeroSnm(calculateSnm($aqsnm)))[0]; ?>;">Sena Madureira</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFontSnm(GetZeroSnm(calculateSnm($aqsnm)))[0]; ?>;"><?php echo round(GetZeroSnm(calculateSnm($aqsnm))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-snm" class="card-category text-left">Sena Madureira</p>
+                      <p id="aq-snm" class="card-title mx-auto aq-color-snm"></p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFontSnm(GetZeroSnm(calculateSnm($aqsnm)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFontSnm(GetZeroSnm(calculateSnm($aqsnm)))[0]; ?>;"></i>
-                  <?php echo $sensorstampsnm; ?>
+                <div id="color-footer-snm" class="stats aq-class-snm">
+                  <i id="color-i-snm" class="fa fa-cloud"></i>
+                  
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-2 col-md-6 col-sm-6">
-            <?php include "php/purpleair_fij.php" ?>
-            <div class="card card-stats" style="background-color: <?php echo GetColorPmFij(GetZeroFij(calculateFij($aqfij)))[0]; ?>;">
+            <div id="background-color-fij" class="card card-stats">
               <div class="card-body ">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="numbers">
-                      <p class="card-category text-left" style="color: <?php echo GetColorFontFij(GetZeroFij(calculateFij($aqfij)))[0]; ?>;">Feijó</p>
-                      <p class="card-title mx-auto " style="color: <?php echo GetColorFontFij(GetZeroFij(calculateFij($aqfij)))[0]; ?>;"><?php echo round(GetZeroFij(calculateFij($aqfij))); ?> &#181;g/m&#179</p>
+                      <p id="label-color-fij" class="card-category text-left">Feijó</p>
+                      <p id="aq-fij" class="card-title mx-auto aq-color-fij"></p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="card-footer ">
                 <hr>
-                <div class="stats" style="color: <?php echo GetColorFontFij(GetZeroFij(calculateFij($aqfij)))[0]; ?>;">
-                  <i class="fa fa-refresh" style="color: <?php echo GetColorFontFij(GetZeroFij(calculateFij($aqfij)))[0]; ?>;"></i>
-                  <?php echo $sensorstampfij; ?>
+                <div id="color-footer-fij" class="stats aq-class-fij">
+                  <i id="color-i-fij" class="fa fa-cloud"></i>
+                  
                 </div>
               </div>
             </div>
@@ -357,23 +352,22 @@ Coded by www.creative-tim.com
   <script src="./assets/js/core/popper.min.js"></script>
   <script src="./assets/js/core/bootstrap.min.js"></script>
   <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Chart JS -->
 
   <!--  Notifications Plugin    -->
   <script src="./assets/js/plugins/bootstrap-notify.js"></script>
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-  <script src="./assets/demo/demo.js"></script>
-
+  <!-- Ajax funtions -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script type="text/javascript" src="./js/getJsonRbr.js"></script>
+  <script type="text/javascript" src="./js/getJsonCzs.js"></script>
+  <script type="text/javascript" src="./js/getJsonBrl.js"></script>
+  <script type="text/javascript" src="./js/getJsonAbr.js"></script>
+  <script type="text/javascript" src="./js/getJsonSnm.js"></script>
+  <script type="text/javascript" src="./js/getJsonFij.js"></script>
   
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/assets-for-demo/js/demo.js
-      demo.initChartsPages();
-    });
-  </script>
+  
 
 </body>
 
