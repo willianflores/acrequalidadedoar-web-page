@@ -1,0 +1,71 @@
+/* Index page */
+.padding-modify {
+    padding-left: 1px !important;
+}
+
+tbody {
+    font-size: 10px !important;
+}
+
+table {
+    padding-top: 2px;
+    
+}
+
+.color-1 {
+    background-color: #969696;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+}
+.color-2 {
+    background-color: #68e143;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+}
+.color-3 {
+    background-color: #ffff55;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+}
+.color-4 {
+    background-color: #ef8533;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+}
+.color-5 {
+    background-color: #ea3324;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+.color-6 {
+    background-color: #8c1a4b;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+.color-7 {
+    background-color: #731425;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+
+.p-card {
+    font-size: 16px !important;
+    text-indent: 2% !important;
+    
+}
+
+.p-card::first-letter {
+    font-size: 150% !important;
+    color: #ef8157 !important;
+  }
+
+.card i:hover {
+    color: black !important;
+}

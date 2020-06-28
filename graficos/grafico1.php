@@ -603,58 +603,5 @@
 
             });
 
-            function translate_month( month ) {
-
-                var result = month;
-
-                switch(month) {
-
-                    case 'Feb':
-                        result = 'Fev' ;
-                        break;
-                    case 'Apr':
-                        result = 'Abr' ;
-                        break;
-                    case 'May':
-                        result = 'Mai' ;
-                        break;
-                    case 'Aug':
-                        result = 'Ago' ;
-                        break;
-                    case 'Sep':
-                        result = 'Set' ;
-                        break;
-                    case 'Dec':
-                        result = 'Dez' ;
-                        break;
-
-                }
-
-                return result;
-            }
-
-
-            function translate_this_label( label ) {
-
-            month = label.match(/Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Nov|Dec/g);
-
-            if ( ! month ) 
-                return label;
-
-            translation = translate_month( month[0] );
-            return label.replace( month, translation, 'g' );
-            }
-
-            chart.render();
-
-            //Download Chart Image
-            document.getElementById("download").addEventListener('click', function(){
-            /*Get image of canvas element*/
-            var url_base64jp = document.getElementById("lineChart").toDataURL("image/jpg",1.0);
-            /*get download button (tag: <a></a>) */
-            var a =  document.getElementById("download");
-            /*insert chart image url to download button (tag: <a></a>) */
-            a.href = url_base64jp;
-            });
 
         </script>

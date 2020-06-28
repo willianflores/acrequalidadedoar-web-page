@@ -33,7 +33,7 @@ function getColor(d) {
          d > 20 ? '#ff0000' :
          d > 10 ? '#ff7e00' :
          d > 5  ? '#ffff00' :
-         d >= 0  ? '#00e400' :
+         d >= 0 ? '#00e400' :
                    'white' ;
 }
 
@@ -88,7 +88,7 @@ info.onAdd = function (map) {
 info.update = function (props) {
   var winName =
   this._div.innerHTML = (props ?
-    '<div class="areaName">' + props.NOME + '</div>' : '<div class="areaName faded"><small>Passe o mouse sobre<br> o município</small></div>') + '<div class="areaLabel"><div class="areaValue">N. de dias</div>' +(props ? '' + (checkNull(props["index" + year])) : '--') + '</div>';
+    '<div class="areaName">' + props.NOME + '</div>' : '<div class="areaName faded"><small>Passe o mouse sobre<br> o município</small></div>') + '<div class="areaLabel"><div class="areaValue">N. de dias:</div>' +(props ? '' + (checkNull(props["index" + year])) : '--') + '</div>';
 };
 info.addTo(map);
 

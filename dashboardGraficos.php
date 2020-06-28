@@ -58,7 +58,7 @@ Coded by www.creative-tim.com
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="javascript:;">
+            <a href="index.php">
               <i class="fa fa-home" style="font-size:28px;"></i>
               <p style="font-size: 16px;">Home</p>
             </a>

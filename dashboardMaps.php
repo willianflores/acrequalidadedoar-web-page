@@ -53,7 +53,7 @@ Coded by www.creative-tim.com
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="javascript:;">
+            <a href="index.php">
               <i class="fa fa-home" style="font-size:28px;"></i>
               <p style="font-size: 16px;">Home</p>
             </a>
@@ -132,9 +132,14 @@ Coded by www.creative-tim.com
             <div class="card ">
               <div class="card-header ">
                 Total de hectares (ha) de alertas de desmatamento nos Municípios do Acre em 2020
+                <div class="tabBar2">
+                    <!-- Edit the labels for each tab, such as "1910" -->
+                    <div id="tab1" class="tabItem2 selected2">2019</div>
+                    <div id="tab2" class="tabItem2">2020</div>
+                </div>
               </div>
               <div class="card-body ">
-                <div id="map" class="map"></div>
+                <div id="map2" class="map"></div>
               </div>
             </div>
           </div>
@@ -143,10 +148,10 @@ Coded by www.creative-tim.com
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                Número de dias com qualiade do ar acima do padrão recomendado pela OMS nos Municípios do Acre em 2019
+                Total de hectares (ha) de alertas de desmatamento nos Municípios do Acre em 2020
               </div>
               <div class="card-body ">
-                <div id="map" class="map"></div>
+                <div id="map1" class="map"></div>
               </div>
             </div>
           </div>
@@ -181,6 +186,8 @@ Coded by www.creative-tim.com
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script type="text/javascript" src="./js/leafletMap1.js"></script>
+  <script type="text/javascript" src="./js/leafletMap2.js"></script>
+  <script type="text/javascript" src="./js/leafletMap3.js"></script>
 
 </body>
 
