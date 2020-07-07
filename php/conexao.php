@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "willianflores";
-$password = "S@il7525";
-$dbname = "db_purpleair";
+$username = "root";
+$password = "";
+$dbname = "purpleair_db";
 
 $conexao = mysqli_connect($servername, $username, $password, $dbname);
 
