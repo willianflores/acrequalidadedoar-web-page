@@ -114,7 +114,7 @@ Coded by www.creative-tim.com
               <span class="navbar-toggler-bar navbar-kebab"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <a class="nav-link" href="http://www.acrequalidadedoar.info/">Home</a>
+              <a class="nav-link" href="./index.php">Home</a>
               <form>
                 <div class="input-group no-border">
                   <input type="text" value="" class="form-control" placeholder="Search...">
@@ -167,6 +167,9 @@ Coded by www.creative-tim.com
                   <?php include "./graficos/grafico5.php" ?>
                 </div>
                 <div class="card-footer ">
+                  <div class="legend">
+                    <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> Limite de média diária da OMS 
+                  </div>
                   <hr>
                   <div class="stats icon-big">
                     <a id="download1" wm-btndownload href="" class="btn btn-primary btn-fab btn-icon btn-round btn-sm" title="Salvar Gráfico">
@@ -189,9 +192,10 @@ Coded by www.creative-tim.com
                 </div>
                 <div class="card-footer ">
                   <div class="legend">
-                    <i class="fa fa-circle " style="color:rgba(0,0,0,.5"></i> Dias com PM2,5 superior a 25 &#181;g/m&#179
+                    <i class="fa fa-circle " style="color:rgba(0,0,0,.5)"></i> Dias com PM2,5 superior a 25 &#181;g/m&#179
                     <i class="fa fa-circle " style="color:rgba(255,48,48)"></i> Média
-                    <i class="fa fa-circle " style="color:rgb(192,192,192)"></i> Municípios 
+                    <i class="fa fa-circle " style="color:rgb(192,192,192)"></i> Municípios
+                    <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> Limite de média diária da OMS 
                   </div>
                   <hr>
                   <div class="stats">
@@ -217,7 +221,8 @@ Coded by www.creative-tim.com
                   <div class="legend">
                       <i class="fa fa-circle " style="color:rgba(0,0,0,.5)"></i> Dias com PM2,5 superior a 25 &#181;g/m&#179
                       <i class="fa fa-circle " style="color:rgba(255,48,48)"></i> Média
-                      <i class="fa fa-circle " style="color:rgb(192,192,192)"></i> Municípios 
+                      <i class="fa fa-circle " style="color:rgb(192,192,192)"></i> Municípios
+                      <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> <i class="fa fa-minus" style="color:rgba(255,165,79,85); font-size:10px;"></i> Limite de média diária da OMS 
                   </div>
                   <hr>
                   <div class="stat">
@@ -254,16 +259,11 @@ Coded by www.creative-tim.com
       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
       <!-- <script src="./js/grafico7.js"></script> -->
       
-    <!--  Google Maps Plugin    -->
-      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
     <!-- Chart JS -->
       <!-- <script src="../assets/js/plugins/chartjs.min.js"></script> -->
-      <script src="./assets/js/chartExport.js"></script>
+      <script src="./js/chartExport.js"></script>
     <!--  Notifications Plugin    -->
       <script src="./assets/js/plugins/bootstrap-notify.js"></script>
-      <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-      <!-- <script src="./assets/js/paper-dashboard.min.js?v=2.0.1" type="text/javascript"></script> Paper Dashboard DEMO methods, don't include it in your project! -->
-      <!-- <script src="./assets/demo/demo.js"></script> -->
         
   </body>
 

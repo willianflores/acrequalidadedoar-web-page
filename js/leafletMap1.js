@@ -11,11 +11,11 @@ var map = L.map('map', {
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
-.setPrefix('Veja <a href="">os codigos da página no GitHub</a>, criado com <a href="http://leafletjs.com" title="A JS library for interactive maps">Leaflet</a>; desenvolvido por <a href="https://www.facebook.com/labgamaufac/">LabGAMA</a>');
+.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a>, criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps">Leaflet</a>; desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
 
 // Basemap layer
 new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions" target="_blank">CartoDB</a>'
 }).addTo(map);
 
 // Edit to upload GeoJSON data file from your local directory

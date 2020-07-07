@@ -100,7 +100,7 @@ Coded by www.creative-tim.com
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <a class="nav-link" href="http://www.acrequalidadedoar.info/">Home</a>
+            <a class="nav-link" href="./index.php">Home</a>
             <form>
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
@@ -198,7 +198,21 @@ Coded by www.creative-tim.com
                     </div>
                     <div class="card-body ">
                         <p class="p-card">O Laboratório de Geoprocessamento Aplicado ao Meio Ambiente (LabGAMA) foi criado em 2013 na Universidade Federal do Acre com a missão de aplicar técnicas e ferramentas de geoprocessamento e sensoriamento remoto para compreender melhor o ambiente em que vivemos.</p>
-                        <p class="p-card">Atualmente o LabGAMA vem desenvolvendo, em parceria com diversas instituições, ações relacionadas a Rede de Monitoramento da Qualidade do Ar do Acre. Essas ações estão sendo lideradas pelo Dr. Willian Flores e comtemplam monitoramento e gestão da rede, processamento de dados e produção informação sobre qualidade do ar no Estado do Acre. Neste contexto, essa página web foi construída para divulgação das informações produzidas. Para tanto acesso aba <a href="index.php">Dados de Qualidade do Ar</a> na barra de navegação dessa página web.  </p>
+                        <p class="p-card">Atualmente o LabGAMA vem desenvolvendo, em parceria com diversas instituições, ações relacionadas a Rede de Monitoramento da Qualidade do Ar do Acre. Essas ações estão sendo lideradas pelo Dr. Willian Flores e comtemplam monitoramento e gestão da rede, processamento de dados e produção informação sobre qualidade do ar no Estado do Acre. Neste contexto, essa página web foi construída para divulgação das informações produzidas. Para tanto acesse as  abas <a href="./dashboardGraficos.php">Gráficos Gerais</a>, <a href="./dashboardGraficos_mun.php">Gráficos Municipais</a> e <a href="./dashboardMaps.php">Mapas</a> na barra de navegação dessa página web.  </p>
+                    </div>
+                </div>
+            </div>
+        </div>      
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card ">
+                    <div class="card-header">
+                    <h5 class="card-title">Sobre os Dados e Códigos</h5>
+                    </div>
+                    <div class="card-body ">
+                        <p class="p-card">Os dados dos sensores Purpleair estão disponíveis em <a href="https://www.purpleair.com/sensorlist" target="_blank">https://www.purpleair.com/sensorlist</a>, onde foram acessados e processados no <a href="https://www.r-project.org/" target="_blank">Software R 3.6</a> e armazenados em banco de dados <a href="https://www.mysql.com/" target="_blank">MySQL</a>. Para diminuir o efeito da superestimativa, já demonstrada em <a href="https://doi.org/10.1016/j.atmosenv.2019.116946" target="_blank">estudos científicos</a>, causada pelos sensores de baixo curso como o <a href="https://www2.purpleair.com/products/purpleair-pa-ii-sd" target="_blank">PurpleAir PA-II-SD</a> empregado na rede de qualidade do ar do Acre, aplicamos a equação [PM2,5 (µg/m³) = 0,5 x PA (PM2,5 CF=1) – 0,66] desenvolvida pelo <a href=" https://www.lrapa.org/DocumentCenter/View/4147/PurpleAir-Correction-Summary" target="_blank">Lane Regional Air Protection Agency (LRAPA)</a> para corrigir os dados. Salientamos que os sensores de qualidade do ar estão localizados nas sedes dos 22 municípios do Acre, no entanto, no caso do primeiro mapa da aba <a href="./dashboardMaps.php">Mapas</a>, extrapolamos os números de dias acima do recomendado pela <a href=" https://www.who.int/eportuguese/countries/bra/pt/" target="_blank"> OMS </a> para toda a área do município, apenas para melhorar a visualização dos dados.</p>
+                        <p class="p-card">Os dados de desmatamento apresentados na nesta página web foram produzidos pelo <a href="https://www.facebook.com/labgamaufac" target="_blank"> LabGAMA </a>. Os dados de focos de calor foram obtidos no <a href="http://queimadas.dgi.inpe.br/queimadas/bdqueimadas/" target="_blank"> banco de dados do INPE </a> e representam a soma dos registros de todos os satélites.</p>
+                        <p class="p-card">Para elaborar esta página web foram utilizadas um grande número de informações disponíveis em fóruns e blogs especializados de Desenvolvimento Web. Além disso foram utilizados diretamente códigos disponíveis nas seguintes fontes: <a href="https://www.wxforum.net/index.php?topic=33482.0" target="_blank">Chris Formeister</a>, <a href="https://github.com/handsondataviz/leaflet-map-polygon-tabs/" target="_blank">Alvin Chang</a> e <a href=" https://creative-tim.com/live/paper-dashboard-2" target="_blank">Creative Tim Dashboard</a>. Todos os códigos fontes das aplicações desenvolvidas serão disponibilizados no canal do Dr. Willian Flores no <a href="https://github.com/willianflores" target="_blank"> GitHub </a>. Além disso foram utilizadas as API’s <a href=" https://www.chartjs.org/" target="_blank"> Chart.js </a>, <a href=" http://leafletjs.com" target="_blank">Leaflet</a> e <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> para desenvolver os gráficos e mapas.</p>
                     </div>
                 </div>
             </div>

@@ -1,108 +1,16 @@
-# [Paper Dashboard 2](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
+# Rede de Monitoramento da Qualidade do Ar do Acre
 
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/86/original/opt_pd2_thumbnail.jpg)
+## O que é a rede?
+Em junho 2019 se tornou operacional a maior rede de monitoramento da qualidade do ar da Amazônia, baseada em sensores [PurpleAir PA-II-SD](https://www2.purpleair.com/products/purpleair-pa-ii-sd) de baixo custo e conceito inovador da Internet das Coisas (Internet of Things - IoT) que se conecta a uma rede internacional, com disponibilização de dados em tempo real e de forma gratuita. Foram instalados 30 sensores, distribuídos nas sedes dos 22 municípios do Estado do Acre.
 
-If you are a developer or a website owner that needs to work within a dashboard and want to have a pretty sight while doing so, **[Paper Dashboard 2](https://creative-tim.com/live/paper-dashboard-2)** is for you. Paper Dashboard is a Bootstrap Admin Panel which combines soft colours with beautiful typography and spacious cards and graphics. It is a powerful tool, but it is light and easy to use. It has enough features to allow you to get the job done, but it is not crowded to the point where you can't find the files for a specific plugin.
+## Qual o objetivo da página web
+Esta página web foi construída para divulgação das informações produzidas com os dados da Rede de Monitoramento da Qualidade do Ar do Estado do Acre para tomadores de decisão e o público em geral. 
 
-We like consistency and design that blends into its purpose. Paper Dashboard is a perfect example of our most thoughtful work. It combines over a dozen components and plugins, while looking like everything fits together. For an easy start or inspiration for you project, we have also create a set of example pages, like the user settings or usage graphics.
-
-Paper Dashboard is built using the same design language as **[Paper Kit](https://www.creative-tim.com/product/paper-kit-2)**. You can easily use them together, or pick between them depending on the project you have.
-
-**Bootstrap 4 Support**
-Paper Dashboard 2 is built on top of the much awaited Bootstrap 4. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4 project; you can just import the Paper Dashboard style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
-
-**Example Pages**
-We wanted to fully display the power of this dashboard, so the kit comes packed with examples showing you how to use the components. Inside the product you will find:
-
-## Links:
-
-+ [Live Preview](https://demos.creative-tim.com/paper-dashboard/examples/dashboard.html)
-+ [Paper Dashboard 2 PRO](https://www.creative-tim.com/product/paper-dashboard-2-pro) (from $39)
-
-**Tutorial**
-In order for you to easily be able to use the Paper Dashboard 2, we have created a tutorial page in our documentation. It shows the structure for the files inside the archive and how to import them. It then features every components with a description and example how to use it. You can see the details [here](https://demos.creative-tim.com/paper-dashboard/docs/1.0/getting-started/introduction.html).
+## Sobre os dados
+Os dados dos sensores Purpleair estão disponíveis em [https://www.purpleair.com/sensorlist](https://www.purpleair.com/sensorlist), onde foram acessados e processados no [Software R 3.6](https://www.r-project.org/) e armazenados em banco de dados [MySQL](https://www.mysql.com/). Para diminuir o efeito da superestimativa, já demonstrada em [estudos científicos](https://doi.org/10.1016/j.atmosenv.2019.116946), causada pelos sensores de baixo curso como o [PurpleAir PA-II-SD](https://www2.purpleair.com/products/purpleair-pa-ii-sd) empregado na rede de qualidade do ar do Acre, aplicamos a equação [PM2,5 (µg/m³) = 0,5 x PA (PM2,5 CF=1) – 0,66] desenvolvida pelo [Lane Regional Air Protection Agency (LRAPA)](https://www.lrapa.org/DocumentCenter/View/4147/PurpleAir-Correction-Summary) para corrigir os dados. Salientamos que os sensores de qualidade do ar estão localizados nas sedes dos 22 municípios do Acre, no entanto, no caso do primeiro mapa da aba [Mapas](www.acrequalidadedoar.info/dashboardMaps.php), extrapolamos os números de dias acima do recomendado pela [OMS](https://www.who.int/eportuguese/countries/bra/pt/) para toda a área do município, apenas para melhorar a visualização dos dados.
+Os dados de desmatamento apresentados na nesta página web foram produzidos pelo [LabGAMA](https://www.facebook.com/labgamaufac). Os dados de focos de calor foram obtidos no [banco de dados do INPE](http://queimadas.dgi.inpe.br/queimadas/bdqueimadas/) e representam a soma dos registros de todos os satélites.
+Para elaborar esta página web foram utilizadas um grande número de informações disponíveis em fóruns e blogs especializados de Desenvolvimento Web. Além disso foram utilizados diretamente códigos disponíveis nas seguintes fontes: [Chris Formeister](https://www.wxforum.net/index.php?topic=33482.0), [Alvin Chang](https://github.com/handsondataviz/leaflet-map-polygon-tabs/) e [Creative Tim Dashboard](https://creative-tim.com/live/paper-dashboard-2). Todos os códigos fontes das aplicações desenvolvidas serão disponibilizados no canal do Dr. Willian Flores no [GitHub](https://github.com/willianflores). Além disso foram utilizadas as API’s [Chart.js](https://www.chartjs.org/), [Leaflet](http://leafletjs.com) e [OpenStreetMap](http://www.openstreetmap.org/copyright){:target="_blank" rel="noopener"} para desenvolver os gráficos e mapas.
+Para construir a página web foram usadas as seguintes linguagens: *R*, *hmtl*, *css*, *php*, *sql*, *javascript*.
 
 
-### What's included
 
-Within the download you'll find the following directories and files:
-
-```
-Paper Dashboard 2
-.
-├── CHANGELOG.md
-├── README.md
-├── assets
-│   ├── css/
-│   ├── demo/
-│   ├── fonts/
-│   ├── img/
-│   ├── js
-│   │   ├── core/
-│   │   ├── paper-dashboard.js
-│   │   ├── paper-dashboard.js.map
-│   │   ├── paper-dashboard.min.js
-│   │   └── plugins
-│   │       ├── bootstrap-notify.js
-│   │       ├── chartjs.min.js
-│   │       └── perfect-scrollbar.jquery.min.js
-│   └── scss/
-│       ├── paper-dashboard/
-│       │   ├── cards/
-│       │   ├── mixins/
-│       │   └── plugins/
-│       └── paper-dashboard.scss
-├── docs/
-│   └── documentation.html
-├── examples/
-│   ├── dashboard.html
-│   ├── icons.html
-│   ├── map.html
-│   ├── notifications.html
-│   ├── tables.html
-│   ├── typography.html
-│   ├── upgrade.html
-│   └── user.html
-├── gulpfile.js
-├── nucleo-icons.html
-└── package.json
-```
-
-## Getting started
-- Download the project’s zip
-- Make sure you have [node.js](https://nodejs.org/en/){:rel="nofollow"} installed
-- Type `npm install` in terminal/console in the source folder where `package.json` is located
-- You will find all the branding colors inside `assets/scss/core/variables/_brand.scss`. You can change them with a HEX value or with other predefined variables from `assets/scss/core/variables/_colors.scss`
-- Run in terminal `gulp compile-scss` for a single compilation or gulp watch for continous compilation of the changes that you make in `*.scss` files. This command should be run in the same folder where `gulpfile.js` and `package.json` are located
-- Run in terminal `gulp open-app` for opening the Presentation Page (default) of the product. You can set in `gulpfile.js` from your downloaded archive any page you want to open in browser, `at line 30: gulp.src('./examples/dashboard.html')`
-
-## Upgrade to PRO Version
-
-Are you looking for more components? Please check our Premium Version of Paper Dashboard right [here](https://www.creative-tim.com/product/paper-dashboard-2-pro).
-
-## Useful Links
-
-More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <http://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
-
-[CHANGELOG]: ./CHANGELOG.md
-[LICENSE]: ./LICENSE
-[version-badge]: https://img.shields.io/badge/version-2.0.1-blue.svg
-[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg

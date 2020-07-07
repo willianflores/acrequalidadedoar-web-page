@@ -539,7 +539,7 @@
                                 display: true,
                                 scaleLabel: {
                                     display:true,
-                                    labelString: "Média diária de MP2,5 (\xB5g/m3)",
+                                    labelString: "Média de 1 hora de MP2,5 (\xB5g/m3)",
                                     fontColor: 'black',
                                     fontSize: 16,
                                     fontFamily: "Montserrat",

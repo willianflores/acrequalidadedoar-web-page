@@ -99,7 +99,7 @@ Coded by www.creative-tim.com
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <a class="nav-link" href="http://www.acrequalidadedoar.info/">Home</a>
+            <a class="nav-link" href="./index.php">Home</a>
             <form>
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
@@ -131,7 +131,7 @@ Coded by www.creative-tim.com
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                Total de hectares (ha) de alertas de desmatamento nos Municípios do Acre em 2020
+                Total de focos de calor nos Municípios do Acre em 2019 e 2020
                 <div class="tabBar2">
                     <!-- Edit the labels for each tab, such as "1910" -->
                     <div id="tab1" class="tabItem2 selected2">2019</div>
@@ -148,7 +148,7 @@ Coded by www.creative-tim.com
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                Total de hectares (ha) de alertas de desmatamento nos Municípios do Acre em 2020
+                Total de hectares (ha) de alertas de desmatamento nos Municípios do Acre em 2020  - Total no Acre de 10.385 ha em 25/06/2020
               </div>
               <div class="card-body ">
                 <div id="map1" class="map"></div>
