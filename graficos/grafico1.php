@@ -298,6 +298,8 @@ while ($dados24 = mysqli_fetch_array($buscar24)) {
 
 }
 
+mysqli_close($conexao);
+
 ?>
 
 <canvas id="lineChart" style="height: 200px"></canvas>
@@ -321,7 +323,7 @@ while ($dados24 = mysqli_fetch_array($buscar24)) {
 
                 },
                 {
-                    label: 'Média',
+                    label: 'Mediana',
                     data: [<?php echo $media; ?>],
                     backgroundColor: 'transparent',
                     borderColor: 'rgba(255,48,48)',
@@ -586,7 +588,7 @@ while ($dados24 = mysqli_fetch_array($buscar24)) {
                     type: 'line',
                     mode: 'horizontal',
                     scaleID: 'y-axis-0',
-                    value: 25,
+                    value: 15,
                     borderColor: 'rgba(255,165,79,85)',
                     borderWidth: 2,
                     borderDash: [3, 3],

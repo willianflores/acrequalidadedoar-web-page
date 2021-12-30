@@ -4,70 +4,70 @@
 
     $sql21 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Rio Branco' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rio Branco' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql31 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Cruzeiro do Sul' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Cruzeiro do Sul' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql41 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Acrelandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Acrelandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql51 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up
-    WHERE municipio = 'Assis Brasil' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59';";
+    WHERE municipio = 'Assis Brasil' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59';";
     $sql61 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Brasileia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Brasileia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql71 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Bujari' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Bujari' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql81 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Capixaba' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Capixaba' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql91 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Epitaciolandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Epitaciolandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql101 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up
-    where municipio = 'Feijo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Feijo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql111 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Jordao' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Jordao' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql121 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Mancio Lima' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Mancio Lima' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql131 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Manoel Urbano' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Manoel Urbano' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql141 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Marechal Thaumaturgo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Marechal Thaumaturgo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql151 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Placido de Castro' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Placido de Castro' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql161 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Porto Acre' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Acre' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql171 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Porto Walter' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Walter' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql181 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Rodrigues Alves' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rodrigues Alves' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql191 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Santa Rosa do Purus' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Santa Rosa do Purus' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql201 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Sena Madureira' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Sena Madureira' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql211 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Senador Guiomard' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Senador Guiomard' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql221 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Tarauaca' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Tarauaca' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql231 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours_up 
-    where municipio = 'Xapuri' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Xapuri' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
 
     $buscar21 = mysqli_query($conexao,$sql21);
     $buscar31 = mysqli_query($conexao,$sql31);
@@ -275,73 +275,73 @@
 
     $sql1 = "SELECT date, ROUND(pm2_5,0) as pm2_5
     from hours 
-    where municipio = 'media' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'media' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql2 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Rio Branco' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rio Branco' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql3 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Cruzeiro do Sul' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Cruzeiro do Sul' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql4 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Acrelandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Acrelandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql5 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours
-    WHERE municipio = 'Assis Brasil' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59';";
+    WHERE municipio = 'Assis Brasil' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59';";
     $sql6 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Brasileia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Brasileia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql7 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Bujari' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Bujari' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql8 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Capixaba' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Capixaba' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql9 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Epitaciolandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Epitaciolandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql10 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours
-    where municipio = 'Feijo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Feijo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql11 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Jordao' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Jordao' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql12 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Mancio Lima' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Mancio Lima' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql13 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Manoel Urbano' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Manoel Urbano' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql14 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Marechal Thaumaturgo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Marechal Thaumaturgo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql15 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Placido de Castro' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Placido de Castro' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql16 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Porto Acre' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Acre' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql17 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Porto Walter' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Walter' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql18 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Rodrigues Alves' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rodrigues Alves' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql19 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Santa Rosa do Purus' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Santa Rosa do Purus' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql20 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Sena Madureira' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Sena Madureira' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql21 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Senador Guiomard' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Senador Guiomard' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql22 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Tarauaca' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Tarauaca' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql23 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from hours 
-    where municipio = 'Xapuri' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Xapuri' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
 
     $buscar1 = mysqli_query($conexao,$sql1);
     $buscar2 = mysqli_query($conexao,$sql2);
@@ -557,6 +557,8 @@
         $xap = trim($xap); #tira os espaços da variável
     
     }
+
+    mysqli_close($conexao);
 
 ?>
 
@@ -1029,7 +1031,7 @@
                                 display: true,
                                 scaleLabel: {
                                     display:true,
-                                    labelString: "Média diária de MP2,5 (\xB5g/m3)",
+                                    labelString: "Média de 1 hora de MP2,5 (\xB5g/m3)",
                                     fontColor: 'black',
                                     fontSize: 16,
                                     fontFamily: "Montserrat",
@@ -1079,7 +1081,7 @@
                                 type: 'line',
                                 mode: 'horizontal',
                                 scaleID: 'y-axis-0',
-                                value: 25,
+                                value: 15,
                                 borderColor: 'rgba(255,165,79,85)',
                                 borderWidth: 2,
                                 borderDash: [3, 3],

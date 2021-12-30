@@ -1,6 +1,6 @@
 // Edit the initial year and number of tabs to match your GeoJSON data and tabs in index.html
 let year2 = "2019";
-let tabs2 = 2;
+let tabs2 = 3;
 
 // Edit the center point and zoom level
 let map2 = L.map('map2', {
@@ -11,11 +11,12 @@ let map2 = L.map('map2', {
 
 // Edit links to your GitHub repo and data source credit
 map2.attributionControl
-.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a>, criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps" target="_blank">Leaflet</a>; desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
+.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a> &#124 Criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps" target="_blank">Leaflet</a> &#124 Desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
 
 // Basemap layer
-new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions" target="_blank">CartoDB</a>'
+new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; Contribuidores <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &#124 Fonte: <a href="https://queimadas.dgi.inpe.br/queimadas/bdqueimadas" target="_blank">INPE</a> '
 }).addTo(map2);
 
 // Edit to upload GeoJSON data file from your local directory

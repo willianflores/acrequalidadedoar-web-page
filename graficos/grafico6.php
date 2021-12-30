@@ -4,76 +4,76 @@
 
     $sql1 = "SELECT date, ROUND(pm2_5,0) as pm2_5
     from day 
-    where municipio = 'media' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'media' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql2 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Rio Branco' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rio Branco' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql3 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Cruzeiro do Sul' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Cruzeiro do Sul' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql4 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Acrelandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Acrelandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql5 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day
-    WHERE municipio = 'Assis Brasil' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59';";
+    WHERE municipio = 'Assis Brasil' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59';";
     $sql6 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Brasileia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Brasileia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql7 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Bujari' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Bujari' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql8 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Capixaba' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Capixaba' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql9 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Epitaciolandia' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Epitaciolandia' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql10 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day
-    where municipio = 'Feijo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Feijo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql11 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Jordao' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Jordao' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql12 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Mancio Lima' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Mancio Lima' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql13 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Manoel Urbano' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Manoel Urbano' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql14 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Marechal Thaumaturgo' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Marechal Thaumaturgo' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql15 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Placido de Castro' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Placido de Castro' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql16 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Porto Acre' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Acre' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql17 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Porto Walter' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Porto Walter' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql18 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Rodrigues Alves' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Rodrigues Alves' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql19 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Santa Rosa do Purus' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Santa Rosa do Purus' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql20 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Sena Madureira' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Sena Madureira' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql21 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Senador Guiomard' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Senador Guiomard' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql22 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Tarauaca' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Tarauaca' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql23 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'Xapuri' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'Xapuri' and date between '2021-01-01 00:00:00' and '2021-12-31 23:59:59'";
     $sql24 = "SELECT IFNULL(ROUND(pm2_5,0),'NaN') as pm2_5
     from day 
-    where municipio = 'up_pm2_5' and date between '2020-01-01 00:00:00' and '2020-12-31 23:59:59'";
+    where municipio = 'up_pm2_5' and date between '2021-01-01 00:00:00' and '2021-11-31 23:59:59'";
 
     $buscar1 = mysqli_query($conexao,$sql1);
     $buscar2 = mysqli_query($conexao,$sql2);
@@ -299,6 +299,8 @@
     
     }
 
+    mysqli_close($conexao);
+
 ?>
 
         <canvas id="lineChart2" style=" width: 400px; height: 150px;"></canvas>
@@ -324,7 +326,7 @@
                         
                     },
                     {
-                        label:'Média',
+                        label:'Mediana',
                         data:[<?php echo $media; ?>],
                         backgroundColor: 'transparent',
                         borderColor: 'rgba(255,48,48)',
@@ -539,7 +541,7 @@
                                 display: true,
                                 scaleLabel: {
                                     display:true,
-                                    labelString: "Média de 1 hora de MP2,5 (\xB5g/m3)",
+                                    labelString: "Média diária de MP2,5 (\xB5g/m3)",
                                     fontColor: 'black',
                                     fontSize: 16,
                                     fontFamily: "Montserrat",
@@ -589,7 +591,7 @@
                                 type: 'line',
                                 mode: 'horizontal',
                                 scaleID: 'y-axis-0',
-                                value: 25,
+                                value: 15,
                                 borderColor: 'rgba(255,165,79,85)',
                                 borderWidth: 2,
                                 borderDash: [3, 3],

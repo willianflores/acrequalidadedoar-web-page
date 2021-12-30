@@ -1,6 +1,6 @@
 // Edit the initial year and number of tabs to match your GeoJSON data and tabs in index.html
 let year1 = "2019";
-let tabs1 = 1;
+let tabs1 = 2;
 
 // Edit the center point and zoom level
 let map1 = L.map('map1', {
@@ -11,11 +11,12 @@ let map1 = L.map('map1', {
 
 // Edit links to your GitHub repo and data source credit
 map1.attributionControl
-.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a>, criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps">Leaflet</a>; desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
+.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a> &#124 Criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps" target="_blank">Leaflet</a> &#124 Desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
 
 // Basemap layer
-new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions" target="_blank">CartoDB</a>'
+new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; Contribuidores <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &#124 Fonte: <a href="https://queimadas.dgi.inpe.br/queimadas/bdqueimadas" target="_blank">INPE</a> '
 }).addTo(map1);
 
 // Edit to upload GeoJSON data file from your local directory
@@ -29,11 +30,11 @@ $.getJSON("./json/acreDef.geojson", function (data) {
 // Edit range cutoffs and colors to match your data; see http://colorbrewer.org
 // Any values not listed in the ranges below displays as the last color
 function getColor1(d) {
-  return d > 1000 ? '#800026' :
-         d > 600  ? '#E31A1C' :
-         d > 400  ? '#FC4E2A' :
-         d > 200  ? '#FD8D3C' :
-         d > 100  ? '#FEB24C' :
+  return d > 5000 ? '#800026' :
+         d > 2000 ? '#E31A1C' :
+         d > 1000 ? '#FC4E2A' :
+         d > 400  ? '#FD8D3C' :
+         d > 200  ? '#FEB24C' :
          d >= 0   ? '#FED976' :
                     'white';
 }
@@ -95,9 +96,9 @@ info1.update = function (props) {
 info1.addTo(map1);
 
 // When a new tab is selected, this changes the year displayed
-$(".tabItem").click(function() {
-  $(".tabItem").removeClass("selected");
-  $(this).addClass("selected");
+$(".tabItem3").click(function() {
+  $(".tabItem3").removeClass("selected3");
+  $(this).addClass("selected3");
   year1 = $(this).html();
   // year = $(this).html().split("-")[1];  /* use for school years, eg 2010-11 */
   geoJsonLayer1.setStyle(style1);
@@ -108,7 +109,7 @@ $(".tabItem").click(function() {
 let legend1 = L.control({position: 'bottomright'});
 legend1.onAdd = function (map) {
   let div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 100, 200, 400, 600, 1000],
+    grades = [0, 200, 400, 1000, 2000, 5000],
     labels = [],
     from, to;
   for (let i = 0; i < grades.length; i++) {
@@ -152,17 +153,17 @@ function comma1(val){
 
 // This watches for arrow keys to advance the tabs
 $("body").keydown(function(e) {
-    let selectedTab1 = parseInt($(".selected").attr('id').replace('tab', ''));
-    let nextTab1;
+    let selectedTab3 = parseInt($(".selected3").attr('id').replace('tab', ''));
+    let nextTab3;
 
     // previous tab with left arrow
     if (e.keyCode == 37) {
-        nextTab1 = (selectedTab1 == 1) ? tabs1 : selectedTab1 - 1;
+        nextTab3 = (selectedTab3 == 1) ? tabs1 : selectedTab3 - 1;
     }
     // next tab with right arrow
     else if (e.keyCode == 39)  {
-        nextTab1 = (selectedTab1 == tabs1) ? 1 : selectedTab1 + 1;
+        nextTab3 = (selectedTab3 == tabs1) ? 1 : selectedTab3 + 1;
     }
 
-    $('#tab' + nextTab1).click();
+    $('#tab' + nextTab3).click();
 });

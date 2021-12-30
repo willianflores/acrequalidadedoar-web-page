@@ -299,6 +299,8 @@
     
     }
 
+    mysqli_close($conexao);
+
 ?>
 
 
@@ -511,7 +513,7 @@ var options = {
             type: 'line',
             mode: 'horizontal',
             scaleID: 'y-axis-0',
-            value: 25,
+            value: 15,
             borderColor: 'rgba(255,165,79,85)',
             borderWidth: 2,
             borderDash: [3, 3],

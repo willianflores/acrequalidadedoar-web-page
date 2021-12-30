@@ -1,6 +1,6 @@
 // Edit the initial year and number of tabs to match your GeoJSON data and tabs in index.html
 var year = "2019";
-var tabs = 1;
+var tabs = 3;
 
 // Edit the center point and zoom level
 var map = L.map('map', {
@@ -11,11 +11,12 @@ var map = L.map('map', {
 
 // Edit links to your GitHub repo and data source credit
 map.attributionControl
-.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a>, criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps">Leaflet</a>; desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
+.setPrefix('Veja <a href="https://github.com/willianflores" target="_blank">os codigos da página no GitHub</a> &#124 Criado com <a href="http://leafletjs.com" target="_blank" title="A JS library for interactive maps" target="_blank">Leaflet</a> &#124 Desenvolvido por <a href="https://www.facebook.com/labgamaufac/" target="_blank">LabGAMA</a>');
 
 // Basemap layer
-new L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions" target="_blank">CartoDB</a>'
+new L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; Contribuidores <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &#124 Fonte: <a href="http://acrequalidadedoar.info" target="_blank">acrequalidadedoar.info</a> '
 }).addTo(map);
 
 // Edit to upload GeoJSON data file from your local directory
@@ -30,11 +31,11 @@ $.getJSON("./json/acreAirQ.geojson", function (data) {
 // Any values not listed in the ranges below displays as the last color
 function getColor(d) {
   return d > 30 ? '#7e0023' :
-         d > 20 ? '#ff0000' :
-         d > 10 ? '#ff7e00' :
-         d > 5  ? '#ffff00' :
-         d >= 0 ? '#00e400' :
-                   'white' ;
+         d > 20 ? '#8c1a4b' :
+         d > 10 ? '#ff0000' :
+         d > 5  ? '#ff7e00' :
+         d > 0  ? '#ffff00' :
+                  '#00e400' ;
 }
 
 // Edit the getColor property to match data properties in your GeoJSON file
@@ -106,7 +107,7 @@ $(".tabItem").click(function() {
 var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
   var div = L.DomUtil.create('div', 'info legend'),
-    grades = [0, 5, 10, 20, 30],
+    grades = [1, 5, 10, 20, 30],
     labels = [],
     from, to;
   for (var i = 0; i < grades.length; i++) {
